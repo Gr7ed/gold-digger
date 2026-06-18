@@ -96,5 +96,12 @@
     "goldSold": 1.25,
     "uuid": "5f3584f9-3671-409f-b665-e49a0a5c6e94",
     "timestamp": "2026-06-18T06:49:42.305Z"
+  },
+  {
+    "amountPaid": 800,
+    "pricePerOz": 3500,
+    "goldSold": 0.2286,
+    "uuid": "5bcb6c2f-06bc-4ce3-af56-e28185526369",
+    "timestamp": "2026-06-18T07:19:18.271Z"
   }
 ]
