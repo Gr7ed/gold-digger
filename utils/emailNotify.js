@@ -1,4 +1,8 @@
 import nodemailer from 'nodemailer'
+import dotenv from 'dotenv'
+
+dotenv.config()
+
 
 export async function emailNotify(purchaseData) {
   try {
@@ -14,7 +18,7 @@ export async function emailNotify(purchaseData) {
 
     await transporter.sendMail({
       from: `"GoldDigger" <${process.env.SMTP_USER || 'your_email@gmail.com'}>`,
-      to: '"Customer" <customer@example.com>',
+      to: '"Customer" suhailmbi2015@outlook.sa', // Customer's email address
       subject: "Your Gold Purchase Confirmation",
       text: `Thank you! You purchased ${purchaseData.goldSold} oz of gold for £${purchaseData.amountPaid}. Transaction ID: ${purchaseData.uuid}`
     })
